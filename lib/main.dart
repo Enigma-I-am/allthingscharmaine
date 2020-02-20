@@ -1,4 +1,3 @@
-
 import 'package:allthingscharmaine/router/router.dart';
 import 'package:allthingscharmaine/core/services/shopData.dart';
 import 'package:allthingscharmaine/core/services/socialData.dart';
@@ -18,11 +17,9 @@ void main() {
   runApp(MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return FutureBuilder<FirebaseUser>(
       future: FirebaseAuth.instance.currentUser(),
       builder: (BuildContext context, AsyncSnapshot<FirebaseUser> snapshot) {
@@ -53,8 +50,8 @@ class MyApp extends StatelessWidget {
                   primaryColor: MyColors().pinkInactive,
                   accentColor: MyColors().pinkActive,
                   fontFamily: 'Poppins'),
-onGenerateRoute: Router.generateRoute,
-onUnknownRoute: Router.unknownRoute,
+              onGenerateRoute: Router.generateRoute,
+              onUnknownRoute: Router.unknownRoute,
             ),
           );
         } else {
@@ -75,30 +72,27 @@ onUnknownRoute: Router.unknownRoute,
               ChangeNotifierProvider(
                 builder: (_) => locator<SocialData>(),
               )
-
             ],
             child: MaterialApp(
-              home: Homepage(),
+              home: LoginSignupscreen(),
               theme: ThemeData(
                   cursorColor: MyColors().pinkInactive,
                   primaryColor: MyColors().pinkInactive,
                   accentColor: MyColors().pinkActive,
                   fontFamily: 'Poppins'),
-                  onGenerateRoute: Router.generateRoute,
-                  onUnknownRoute: Router.unknownRoute,
+              onGenerateRoute: Router.generateRoute,
+              onUnknownRoute: Router.unknownRoute,
             ),
           );
         }
       },
     );
-
   }
 }
 
-class Homepage extends StatelessWidget {
+class LoginSignupscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return NameRegScreen();
   }
 }
-

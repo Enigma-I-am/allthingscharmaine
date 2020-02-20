@@ -9,10 +9,12 @@ import 'core/viewmodels/userviewmodel.dart';
 
 GetIt locator = GetIt.instance;
 setupLocator() {
+  
   locator.registerLazySingleton(() => UserViewModel());
   locator.registerLazySingleton(() => Api());
   locator.registerLazySingleton(() => LoginViewmodel());
   locator.registerLazySingleton(() => UserCreditCardViewmodel());
   locator.registerLazySingleton(()=> ShopData());
   locator.registerLazySingleton(()=> SocialData());
+
 }

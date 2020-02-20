@@ -38,7 +38,7 @@ class ShopViewWidget extends StatelessWidget {
                 Column(
                   children: <Widget>[
                     SvgPicture.asset(
-                      "assets/ICON 8.svg",
+                      "assets/ICON_8.svg",
                     ),
                     Text(
                       "some text",
@@ -48,7 +48,7 @@ class ShopViewWidget extends StatelessWidget {
                 ),
                 Column(
                   children: <Widget>[
-                    SvgPicture.asset("assets/ICON 5.svg"),
+                    SvgPicture.asset("assets/ICON_5.svg"),
                     Text(
                       "some text",
                       style: TextStyle(color: Colors.grey[700]),
@@ -57,7 +57,7 @@ class ShopViewWidget extends StatelessWidget {
                 ),
                 Column(
                   children: <Widget>[
-                    SvgPicture.asset("assets/ICON 6.svg"),
+                    SvgPicture.asset("assets/ICON_6.svg"),
                     Text(
                       "some text",
                       style: TextStyle(color: Colors.grey[700]),
@@ -66,7 +66,7 @@ class ShopViewWidget extends StatelessWidget {
                 ),
                 Column(
                   children: <Widget>[
-                    SvgPicture.asset("assets/ICON 7.svg"),
+                    SvgPicture.asset("assets/ICON_7.svg"),
                     Text(
                       "some text",
                       style: TextStyle(color: Colors.grey[700]),

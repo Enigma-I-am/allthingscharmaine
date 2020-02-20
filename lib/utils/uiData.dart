@@ -27,9 +27,9 @@ class UIData {
   //images
   static const String hambMenu = "assets/hamb-menu.png";
   static const String notification = "assets/notification.png";
-  static const String apron1 = "assets/approns 1.png";
-  static const String apron2 = "assets/approns 2.png";
-  static const String apron3 = "assets/approns 3.png";
+  static const String apron1 = "assets/approns_1.png";
+  static const String apron2 = "assets/approns_2.png";
+  static const String apron3 = "assets/approns_3.png";
   static const String bookHeader = "assets/book.png";
   static const String error = "assets/ICON 2.png";
   static const String library ="assets/ICON 4.png";
@@ -62,7 +62,7 @@ class UIData {
   static const String socialHeader = 'Social';
 
 //colors
-   static final Color shopColor = Colors.green[200];
+  static final Color shopColor = Colors.green[200];
   static final Color bookColor = Colors.deepOrange[200];
   static final Color clothingColor = Colors.pink[200];
   static final Color jewelryColor = Colors.blue[200];
